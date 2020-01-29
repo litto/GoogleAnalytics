@@ -5,7 +5,7 @@ function initializeAnalytics()
   // Use the developers console and download your service account
   // credentials in JSON format. Place them in this directory or
   // change the key file location if necessary.
-  $KEY_FILE_LOCATION = __DIR__ . '/stone-chariot-266307-6cb8a680dcbc.json';
+  $KEY_FILE_LOCATION = __DIR__ . '/credentials.json';
 
   // Create and configure a new client object.
   $client = new Google_Client();
@@ -27,7 +27,7 @@ function initializeAnalytics()
 function getReport($analytics) {
 
   // Replace with your view ID, for example XXXX.
-  $VIEW_ID = "207950363";
+  $VIEW_ID = "YourID";
 
   // Create the DateRange object.
   $dateRange = new Google_Service_AnalyticsReporting_DateRange();
